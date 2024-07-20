@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+a{
+    color: inherit;
+}
+body {
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: sticky;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-links .dropdown-content li {
+    padding: 10px;
+}
+
+.nav-links .dropdown-content a {
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+.btn.primary {
+    background-color: #333;
+    color: #fff;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: radial-gradient(circle, rgb(246, 246, 247) 0%, rgba(239, 221, 183, 0.922) 100%);
+    box-sizing: border-box;
+    overflow: hidden; 
+    position: relative;
+}
+
+
+.hero-content {
+    flex: 1 1 50%;
+    padding-right: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.hero-image {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
